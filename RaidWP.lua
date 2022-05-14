@@ -1,11 +1,5 @@
 _G.Raid = true
 
-wait(10)
-            game.Players.LocalPlayer.Character.Head.Overhead.PlayerName:Destroy()
-        
-    game.Players.LocalPlayer.PlayerGui.MainUI.HUD.Playername:Destroy()
-
-
     local placeId = game.PlaceId
 	if placeId == 9487450292 then
 		First = true
