@@ -68,3 +68,6 @@ game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players")
        end)
     end)
 
+if _G.FastMode then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/xlostpexz/FPSBoost/main/FPSBoost', true))()
+end
