@@ -5,6 +5,15 @@ wait(10)
         
     game.Players.LocalPlayer.PlayerGui.MainUI.HUD.Playername:Destroy()
 
+
+
+local args = {
+    [1] = "Haki"
+}
+
+game:GetService("Players").LocalPlayer.Backpack.Haki.Haki:FireServer(unpack(args))
+
+
     local placeId = game.PlaceId
 	if placeId == 9487450292 then
 		First = true
@@ -50,8 +59,7 @@ end
        game:GetService("RunService").RenderStepped:Connect(function()
         pcall(function()
             if _G.Raid then
-            game:GetService'VirtualUser':CaptureController()
-            game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+game:GetService("Players").LocalPlayer.Character[_G.Weapon].Client.Combat:FireServer()
             end
         end)
        end)
