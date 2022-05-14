@@ -62,3 +62,15 @@ game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players")
         end)
        end)
     end)
+
+      spawn(function()
+       game:GetService("RunService").RenderStepped:Connect(function()
+        pcall(function()
+            if _G.Raid then
+            game.Players.LocalPlayer.Character.Head.Overhead.PlayerName:Destroy()
+        
+    game.Players.LocalPlayer.PlayerGui.MainUI.HUD.Playername:Destroy()
+            end
+        end)
+       end)
+    end)
