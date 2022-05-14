@@ -6,14 +6,6 @@ wait(10)
     game.Players.LocalPlayer.PlayerGui.MainUI.HUD.Playername:Destroy()
 
 
-
-local args = {
-    [1] = "Haki"
-}
-
-game:GetService("Players").LocalPlayer.Backpack.Haki.Haki:FireServer(unpack(args))
-
-
     local placeId = game.PlaceId
 	if placeId == 9487450292 then
 		First = true
